@@ -41,7 +41,7 @@
   "dependencies": {
     "@eldrforge/ai-service": "^0.1.18",
     "@eldrforge/audio-tools": "^0.1.12",
-    "@eldrforge/commands-git": "^0.1.0",
+    "@eldrforge/commands-git": "^0.1.2",
     "@eldrforge/core": "^0.1.1",
     "@eldrforge/shared": "^0.1.7",
     "@riotprompt/riotprompt": "^0.0.10",
