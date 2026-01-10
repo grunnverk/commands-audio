@@ -39,11 +39,11 @@
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@eldrforge/ai-service": "^0.1.17",
-    "@eldrforge/audio-tools": "^0.1.11",
+    "@eldrforge/ai-service": "^0.1.18",
+    "@eldrforge/audio-tools": "^0.1.12",
     "@eldrforge/commands-git": "^0.1.0",
-    "@eldrforge/core": "^0.1.0",
-    "@eldrforge/shared": "^0.1.6",
+    "@eldrforge/core": "^0.1.1",
+    "@eldrforge/shared": "^0.1.7",
     "@riotprompt/riotprompt": "^0.0.10",
     "@theunwalked/unplayable": "^0.0.21",
     "dotenv": "^17.2.1"
