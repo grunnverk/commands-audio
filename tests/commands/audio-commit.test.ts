@@ -129,6 +129,8 @@ describe('audio-commit command', () => {
         it('should handle archive option', async () => {
             const config: Config = {
                 configDirectory: '.kodrdriv',
+                discoveredConfigDirs: [],
+                resolvedConfigDirs: [],
                 dryRun: false,
                 model: 'gpt-4',
                 audioCommit: {
@@ -145,6 +147,8 @@ describe('audio-commit command', () => {
         it('should handle context option', async () => {
             const config: Config = {
                 configDirectory: '.kodrdriv',
+                discoveredConfigDirs: [],
+                resolvedConfigDirs: [],
                 dryRun: false,
                 model: 'gpt-4',
                 audioCommit: {
@@ -161,6 +165,8 @@ describe('audio-commit command', () => {
         it('should handle multiple options together', async () => {
             const config: Config = {
                 configDirectory: '.kodrdriv',
+                discoveredConfigDirs: [],
+                resolvedConfigDirs: [],
                 dryRun: false,
                 model: 'gpt-4',
                 audioCommit: {

@@ -128,6 +128,8 @@ describe('audio-review command', () => {
         it('should handle archive and context together', async () => {
             const config: Config = {
                 configDirectory: '.kodrdriv',
+                discoveredConfigDirs: [],
+                resolvedConfigDirs: [],
                 dryRun: false,
                 model: 'gpt-4',
                 audioReview: {
