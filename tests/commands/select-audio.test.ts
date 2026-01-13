@@ -6,14 +6,19 @@ vi.mock('@theunwalked/unplayable', () => ({
     selectAndConfigureAudioDevice: vi.fn().mockResolvedValue('Device configured successfully')
 }));
 
-vi.mock('@eldrforge/core', () => ({
-    getDryRunLogger: vi.fn().mockReturnValue({
+vi.mock('@eldrforge/core', () => {
+    const mockLogger = {
         info: vi.fn(),
         debug: vi.fn(),
         warn: vi.fn(),
-        error: vi.fn()
-    })
-}));
+        error: vi.fn(),
+        verbose: vi.fn()
+    };
+    return {
+        getDryRunLogger: vi.fn().mockReturnValue(mockLogger),
+        getLogger: vi.fn().mockReturnValue(mockLogger)
+    };
+});
 
 describe('select-audio command', () => {
     let selectAudio: any;
