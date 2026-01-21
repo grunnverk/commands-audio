@@ -1,6 +1,6 @@
 {
   "name": "@eldrforge/commands-audio",
-  "version": "1.0.0-dev.0",
+  "version": "1.0.0",
   "description": "Audio transcription and voice commands for kodrdriv (transcribe, voice-note)",
   "main": "dist/index.js",
   "type": "module",
