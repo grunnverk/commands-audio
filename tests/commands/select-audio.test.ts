@@ -1,12 +1,12 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import type { Config } from '@eldrforge/core';
+import type { Config } from '@grunnverk/core';
 
 // Mock all external dependencies
 vi.mock('@theunwalked/unplayable', () => ({
     selectAndConfigureAudioDevice: vi.fn().mockResolvedValue('Device configured successfully')
 }));
 
-vi.mock('@eldrforge/core', () => {
+vi.mock('@grunnverk/core', () => {
     const mockLogger = {
         info: vi.fn(),
         debug: vi.fn(),

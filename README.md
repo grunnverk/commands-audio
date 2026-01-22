@@ -1,11 +1,11 @@
-# @eldrforge/commands-audio
+# @grunnverk/commands-audio
 
 Audio transcription and voice commands for kodrdriv.
 
 ## Installation
 
 ```bash
-npm install @eldrforge/commands-audio
+npm install @grunnverk/commands-audio
 ```
 
 ## Commands
@@ -39,7 +39,7 @@ kodrdriv audio-review --file feedback.wav
 ## Usage
 
 ```typescript
-import { selectAudio, audioCommit, audioReview } from '@eldrforge/commands-audio';
+import { selectAudio, audioCommit, audioReview } from '@grunnverk/commands-audio';
 
 // Select audio device
 await selectAudio(config);
@@ -53,9 +53,9 @@ await audioReview(config);
 
 ## Dependencies
 
-- `@eldrforge/core` - Core utilities and types
-- `@eldrforge/audio-tools` - Audio recording and processing
-- `@eldrforge/ai-service` - Transcription service
+- `@grunnverk/core` - Core utilities and types
+- `@grunnverk/audio-tools` - Audio recording and processing
+- `@grunnverk/ai-service` - Transcription service
 - `@theunwalked/unplayable` - Audio capture library
 
 ## License
