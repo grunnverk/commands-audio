@@ -1,12 +1,12 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import type { Config } from '@eldrforge/core';
+import type { Config } from '@grunnverk/core';
 
 // Mock all external dependencies
 vi.mock('@theunwalked/unplayable', () => ({
     processAudio: vi.fn().mockResolvedValue({ path: '/tmp/test.wav' })
 }));
 
-vi.mock('@eldrforge/audio-tools', () => ({
+vi.mock('@grunnverk/audio-tools', () => ({
     createAudioRecordingCountdown: vi.fn().mockReturnValue({
         start: vi.fn().mockResolvedValue(undefined),
         stop: vi.fn()
@@ -14,15 +14,15 @@ vi.mock('@eldrforge/audio-tools', () => ({
     archiveAudio: vi.fn().mockResolvedValue(undefined)
 }));
 
-vi.mock('@eldrforge/ai-service', () => ({
+vi.mock('@grunnverk/ai-service', () => ({
     transcribeAudio: vi.fn().mockResolvedValue('Mock transcription of audio'),
 }));
 
-vi.mock('@eldrforge/commands-git', () => ({
+vi.mock('@grunnverk/commands-git', () => ({
     commit: vi.fn().mockResolvedValue('Mock commit message generated')
 }));
 
-vi.mock('@eldrforge/core', () => ({
+vi.mock('@grunnverk/core', () => ({
     getDryRunLogger: vi.fn().mockReturnValue({
         info: vi.fn(),
         debug: vi.fn(),
@@ -49,7 +49,7 @@ vi.mock('@eldrforge/core', () => ({
     })
 }));
 
-vi.mock('@eldrforge/shared', () => ({
+vi.mock('@grunnverk/shared', () => ({
     CancellationError: class CancellationError extends Error {},
     UserCancellationError: class UserCancellationError extends Error {},
     createStorage: vi.fn().mockReturnValue({

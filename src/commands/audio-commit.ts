@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import path from 'path';
 import { processAudio } from '@theunwalked/unplayable';
-import { CancellationError, UserCancellationError } from '@eldrforge/shared';
-import { getDryRunLogger, getLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@eldrforge/core';
-import { transcribeAudio } from '@eldrforge/ai-service';
-import { commit as executeCommit } from '@eldrforge/commands-git';
-import { createAudioRecordingCountdown, archiveAudio } from '@eldrforge/audio-tools';
+import { CancellationError, UserCancellationError } from '@grunnverk/shared';
+import { getDryRunLogger, getLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@grunnverk/core';
+import { transcribeAudio } from '@grunnverk/ai-service';
+import { commit as executeCommit } from '@grunnverk/commands-git';
+import { createAudioRecordingCountdown, archiveAudio } from '@grunnverk/audio-tools';
 
 const executeInternal = async (runConfig: Config): Promise<string> => {
     const isDryRun = runConfig.dryRun || false;
