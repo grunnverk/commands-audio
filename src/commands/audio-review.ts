@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import { getLogger, getDryRunLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@eldrforge/core';
-import { review as executeReview } from '@eldrforge/commands-git';
+import { getLogger, getDryRunLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@grunnverk/core';
+import { review as executeReview } from '@grunnverk/commands-git';
 import { processAudio } from '@theunwalked/unplayable';
-import { transcribeAudio } from '@eldrforge/ai-service';
-import { CancellationError, createStorage } from '@eldrforge/shared';
-import { createAudioRecordingCountdown, archiveAudio } from '@eldrforge/audio-tools';
+import { transcribeAudio } from '@grunnverk/ai-service';
+import { CancellationError, createStorage } from '@grunnverk/shared';
+import { createAudioRecordingCountdown, archiveAudio } from '@grunnverk/audio-tools';
 import path from 'path';
 
 // Common audio file extensions
