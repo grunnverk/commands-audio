@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import path from 'path';
 import os from 'os';
-import { getDryRunLogger, Config } from '@eldrforge/core';
+import { getDryRunLogger, Config } from '@grunnverk/core';
 import { selectAndConfigureAudioDevice } from '@theunwalked/unplayable';
 
 const getUnplayableConfigPath = (): string => {
