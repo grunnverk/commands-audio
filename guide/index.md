@@ -1,4 +1,4 @@
-# @eldrforge/commands-audio - Agentic Guide
+# @grunnverk/commands-audio - Agentic Guide
 
 ## Purpose
 
@@ -18,7 +18,7 @@ For AI agents working with this package:
 
 ```typescript
 // Audio commands
-import { selectAudio, audioCommit, audioReview } from '@eldrforge/commands-audio';
+import { selectAudio, audioCommit, audioReview } from '@grunnverk/commands-audio';
 
 // Execute commands
 await selectAudio(config);
@@ -28,9 +28,9 @@ await audioReview(config);
 
 ## Dependencies
 
-- @eldrforge/core - Core utilities
-- @eldrforge/audio-tools - Audio processing
-- @eldrforge/ai-service - Transcription
+- @grunnverk/core - Core utilities
+- @grunnverk/audio-tools - Audio processing
+- @grunnverk/ai-service - Transcription
 - @theunwalked/unplayable - Audio capture
 
 ## Command Workflows
