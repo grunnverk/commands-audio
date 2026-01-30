@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import type { Config } from '@grunnverk/core';
 
 // Mock all external dependencies
-vi.mock('@theunwalked/unplayable', () => ({
+vi.mock('@utilarium/unplayable', () => ({
     processAudio: vi.fn().mockResolvedValue({ path: '/tmp/test.wav' })
 }));
 

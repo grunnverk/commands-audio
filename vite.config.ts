@@ -70,7 +70,7 @@ export default defineConfig({
                 '@grunnverk/audio-tools',
                 '@grunnverk/ai-service',
                 '@grunnverk/shared',
-                '@theunwalked/unplayable',
+                '@utilarium/unplayable',
                 '@riotprompt/riotprompt',
                 'dotenv',
                 'dotenv/config',

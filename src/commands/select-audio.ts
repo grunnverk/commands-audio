@@ -2,7 +2,7 @@
 import path from 'path';
 import os from 'os';
 import { getDryRunLogger, Config } from '@grunnverk/core';
-import { selectAndConfigureAudioDevice } from '@theunwalked/unplayable';
+import { selectAndConfigureAudioDevice } from '@utilarium/unplayable';
 
 const getUnplayableConfigPath = (): string => {
     try {
