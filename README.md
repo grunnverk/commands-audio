@@ -56,7 +56,7 @@ await audioReview(config);
 - `@grunnverk/core` - Core utilities and types
 - `@grunnverk/audio-tools` - Audio recording and processing
 - `@grunnverk/ai-service` - Transcription service
-- `@theunwalked/unplayable` - Audio capture library
+- `@utilarium/unplayable` - Audio capture library
 
 ## License
 

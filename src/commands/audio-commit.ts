@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import path from 'path';
-import { processAudio } from '@theunwalked/unplayable';
+import { processAudio } from '@utilarium/unplayable';
 import { CancellationError, UserCancellationError } from '@grunnverk/shared';
 import { getDryRunLogger, getLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@grunnverk/core';
 import { transcribeAudio } from '@grunnverk/ai-service';

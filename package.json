@@ -50,7 +50,7 @@
     "@grunnverk/github-tools": "^1.5.4",
     "@grunnverk/shared": "^1.5.4",
     "@riotprompt/riotprompt": "^0.0.21",
-    "@theunwalked/unplayable": "^0.0.28",
+    "@utilarium/unplayable": "^0.0.29",
     "dotenv": "^17.2.1"
   },
   "devDependencies": {

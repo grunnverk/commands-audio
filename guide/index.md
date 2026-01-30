@@ -31,7 +31,7 @@ await audioReview(config);
 - @grunnverk/core - Core utilities
 - @grunnverk/audio-tools - Audio processing
 - @grunnverk/ai-service - Transcription
-- @theunwalked/unplayable - Audio capture
+- @utilarium/unplayable - Audio capture
 
 ## Command Workflows
 

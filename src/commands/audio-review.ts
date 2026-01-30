@@ -2,7 +2,7 @@
 
 import { getLogger, getDryRunLogger, Config, getTimestampedAudioFilename, createStorageAdapter, createLoggerAdapter } from '@grunnverk/core';
 import { review as executeReview } from '@grunnverk/commands-git';
-import { processAudio } from '@theunwalked/unplayable';
+import { processAudio } from '@utilarium/unplayable';
 import { transcribeAudio } from '@grunnverk/ai-service';
 import { CancellationError, createStorage } from '@grunnverk/shared';
 import { createAudioRecordingCountdown, archiveAudio } from '@grunnverk/audio-tools';

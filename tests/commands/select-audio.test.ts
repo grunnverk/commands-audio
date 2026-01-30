@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import type { Config } from '@grunnverk/core';
 
 // Mock all external dependencies
-vi.mock('@theunwalked/unplayable', () => ({
+vi.mock('@utilarium/unplayable', () => ({
     selectAndConfigureAudioDevice: vi.fn().mockResolvedValue('Device configured successfully')
 }));
 
@@ -52,7 +52,7 @@ describe('select-audio command', () => {
         });
 
         it('should call selectAndConfigureAudioDevice in live mode', async () => {
-            const { selectAndConfigureAudioDevice } = await import('@theunwalked/unplayable');
+            const { selectAndConfigureAudioDevice } = await import('@utilarium/unplayable');
 
             const config: Config = {
                 dryRun: false,
@@ -65,7 +65,7 @@ describe('select-audio command', () => {
         });
 
         it('should pass debug flag to device selector', async () => {
-            const { selectAndConfigureAudioDevice } = await import('@theunwalked/unplayable');
+            const { selectAndConfigureAudioDevice } = await import('@utilarium/unplayable');
 
             const config: Config = {
                 dryRun: false,
@@ -85,7 +85,7 @@ describe('select-audio command', () => {
 
     describe('error handling', () => {
         it('should handle device selection errors', async () => {
-            const { selectAndConfigureAudioDevice } = await import('@theunwalked/unplayable');
+            const { selectAndConfigureAudioDevice } = await import('@utilarium/unplayable');
 
             vi.mocked(selectAndConfigureAudioDevice).mockRejectedValueOnce(
                 new Error('Device selection failed')
@@ -99,7 +99,7 @@ describe('select-audio command', () => {
         });
 
         it('should handle home directory errors', async () => {
-            const { selectAndConfigureAudioDevice } = await import('@theunwalked/unplayable');
+            const { selectAndConfigureAudioDevice } = await import('@utilarium/unplayable');
 
             vi.mocked(selectAndConfigureAudioDevice).mockRejectedValueOnce(
                 new Error('Failed to determine home directory: Access denied')
