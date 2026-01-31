@@ -71,7 +71,7 @@ export default defineConfig({
                 '@grunnverk/ai-service',
                 '@grunnverk/shared',
                 '@utilarium/unplayable',
-                '@riotprompt/riotprompt',
+                '@kjerneverk/riotprompt',
                 'dotenv',
                 'dotenv/config',
                 'tiktoken',
